@@ -1,0 +1,79 @@
+.section {
+    padding: 100px 0;
+}
+
+
+/* .inner {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+} */
+
+.title {
+    max-width: 1560px;
+    width: 100%;
+    margin: 0 auto 32px auto;
+    padding: 0 15px;
+
+    text-align: left;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    line-height: 32px;
+    white-space: nowrap;
+
+    letter-spacing: 1px;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    word-break: keep-all;
+}
+
+@media (max-width:768px) {
+    .default .title h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width:500px) {
+    .default .title h2 {
+        font-size: 6.5vw;
+    }
+}
+
+.more_btn {
+    display: inline-block;
+    padding: 16px 32px;
+
+    background: transparent;
+    color: #123A6E;
+    border: none;
+
+    border: 1px solid #123A6E;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.more_btn::after {
+    content: "\f1e1";
+    font-family: 'Material Symbols Outlined';
+
+    margin: 0 0 0 4px;
+    vertical-align: -2px;
+}
+
+.more_btn:hover {
+    background: #123A6E;
+    color: #fff;
+}
