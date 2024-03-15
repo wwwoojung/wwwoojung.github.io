@@ -458,6 +458,24 @@
     color: var(--white_color);
 }
 
+.MainPortfolio .con .desc .feature {
+    padding: 2px 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .MainPortfolio .con .desc .feature::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--main_color);
+} */
+
 .MainPortfolio .con .desc_table {
     border-top: 1px solid var(--white_color);
     width: 100%;
@@ -575,6 +593,8 @@
 
 
 
+
+
 .MainTraining {
     min-height: 100vh;
 }
@@ -674,6 +694,7 @@
 
 .MainTraining .tab_con .con .itm img {
     width: 100%;
+    height: 2;
 }
 
 .MainTraining .tab_con .con .itm strong {
