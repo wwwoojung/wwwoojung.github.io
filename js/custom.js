@@ -44,45 +44,45 @@ function MainTitleTimeline() {
     TL1
         .to('.MainTitle .inner .keyword', {
             x: -250,
-            duration: 10,
+            duration: 1,
             // ease: "bounce",
         })
         .from('.MainTitle .inner .word .s01', {
             x: 500,
             autoAlpha: 0,
-            duration: 10,
+            duration: 2,
             // ease: "bounce",
         })
         .from('.MainTitle .inner .word .s02', {
             x: 500,
             autoAlpha: 0,
-            duration: 10,
+            duration: 2,
         })
         .from('.MainTitle .inner .word .s03', {
             x: 500,
             autoAlpha: 0,
-            duration: 10,
+            duration: 2,
         })
         .to('.MainTitle .inner .key_box', {
             y: -50,
-            duration: 10,
+            duration: 1,
         })
         .from('.MainTitle .slogan strong', {
             autoAlpha: 0,
-            duration: 10,
+            duration: 2,
         })
         .to('.MainTitle .slogan .box', {
             width: 1000,
-            duration: 10,
+            duration: 5,
         })
         .to('.page', {
             xPercent: -100,
             ease: "none",
-            duration: 110,
+            duration: 10,
         })
         .from('.MainTitle .introduce_wrap .clock', {
             autoAlpha: 0,
-            duration: 110,
+            duration: 2,
         })
         .from('.MainTitle .introduce_wrap #Line .g01 path', {
             strokeDashoffset: 2036,
@@ -93,12 +93,12 @@ function MainTitleTimeline() {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .to('.MainTitle .introduce_wrap #Line .g01 text', {
             opacity: 1,
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .from('.MainTitle .introduce_wrap #Line .g02 path', {
@@ -110,12 +110,12 @@ function MainTitleTimeline() {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .to('.MainTitle .introduce_wrap #Line .g02 text', {
             opacity: 1,
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .from('.MainTitle .introduce_wrap #Line .g03 path', {
@@ -127,12 +127,12 @@ function MainTitleTimeline() {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .to('.MainTitle .introduce_wrap #Line .g03 text', {
             opacity: 1,
-            delay: 2,
+            delay: 5,
             duration: 5,
         })
         .from('.MainTitle .introduce_wrap #Line .g04 path', {
