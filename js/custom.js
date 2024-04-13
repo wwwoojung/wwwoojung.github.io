@@ -8,10 +8,10 @@
         e.preventDefault();
         const IDX = $(this).parent().index();
 
-        $('.MainTraining .tab_menu>li').removeClass('on')
-        $('.MainTraining .tab_menu>li').eq(IDX).addClass('on')
-        $('.MainTraining .tab_con .con').removeClass('on')
-        $('.MainTraining .tab_con .con').eq(IDX).addClass('on')
+        $('.MainTraining .tab_menu>li').removeClass('on');
+        $('.MainTraining .tab_menu>li').eq(IDX).addClass('on');
+        $('.MainTraining .tab_con .con').removeClass('on');
+        $('.MainTraining .tab_con .con').eq(IDX).addClass('on');
     })
 })();
 
