@@ -37,7 +37,7 @@ function MainTitleTimeline() {
             pin: true,
             scrub: 1,
 
-            end: () => '+=' + document.querySelector('.MainTitle').offsetWidth * 2,
+            end: () => '+=' + document.querySelector('.MainTitle').offsetWidth * 5,
         }
     });
 
@@ -50,109 +50,109 @@ function MainTitleTimeline() {
         .from('.MainTitle .inner .word .s01', {
             x: 500,
             autoAlpha: 0,
-            duration: 2,
+            duration: 20,
             // ease: "bounce",
         })
         .from('.MainTitle .inner .word .s02', {
             x: 500,
             autoAlpha: 0,
-            duration: 2,
+            duration: 20,
         })
         .from('.MainTitle .inner .word .s03', {
             x: 500,
             autoAlpha: 0,
-            duration: 2,
+            duration: 20,
         })
         .to('.MainTitle .inner .key_box', {
             y: -50,
-            duration: 1,
+            duration: 10,
         })
         .from('.MainTitle .slogan strong', {
             autoAlpha: 0,
-            duration: 2,
+            duration: 10,
         })
         .to('.MainTitle .slogan .box', {
             width: 1000,
-            duration: 5,
+            duration: 20,
         })
         .to('.page', {
             xPercent: -100,
             ease: "none",
-            duration: 10,
+            duration: 20,
         })
         .from('.MainTitle .introduce_wrap .clock', {
             autoAlpha: 0,
-            duration: 2,
+            duration: 10,
         })
         .from('.MainTitle .introduce_wrap #Line .g01 path', {
             strokeDashoffset: 2036,
             delay: 5,
-            duration: 10,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g01 #BC', {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g01 text', {
             opacity: 1,
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .from('.MainTitle .introduce_wrap #Line .g02 path', {
             strokeDashoffset: 2036,
             delay: 5,
-            duration: 10,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g02 #BC', {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g02 text', {
             opacity: 1,
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .from('.MainTitle .introduce_wrap #Line .g03 path', {
             strokeDashoffset: 2036,
             delay: 5,
-            duration: 10,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g03 #BC', {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g03 text', {
             opacity: 1,
             delay: 5,
-            duration: 5,
+            duration: 20,
         })
         .from('.MainTitle .introduce_wrap #Line .g04 path', {
             strokeDashoffset: 2036,
             delay: 5,
-            duration: 10,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g04 #BC', {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 50%",
             delay: 2,
-            duration: 5,
+            duration: 20,
         })
         .to('.MainTitle .introduce_wrap #Line .g04 text', {
             opacity: 1,
             delay: 2,
-            duration: 5,
+            duration: 20,
         })
-        .set({}, {}, "+=100")
+        .set({}, {}, "+=50")
 }
 
 
@@ -274,7 +274,7 @@ function Training() {
             scale: 3,
             autoAlpha: 0,
             delay: 5,
-            duration: 10,
+            duration: 7,
         })
         .from('.MainTraining .title h2', {
             y: 200,

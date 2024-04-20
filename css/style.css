@@ -15,14 +15,6 @@
     width: 100%;
 }
 
-/* body {
-    height: 1000vh;
-} */
-
-/* * {
-    outline: 1px solid tomato;
-} */
-
 
 .wrap {
     overflow: hidden;
@@ -617,7 +609,7 @@
     color: var(--bg_color);
 
     text-transform: uppercase;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 2px #fff;
 }
 
 .MainTraining .tab_menu {
