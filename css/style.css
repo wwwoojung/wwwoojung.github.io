@@ -596,11 +596,28 @@
 
 
 .MainTraining {
+    position: relative;
     min-height: 100vh;
 }
 
 .MainTraining .title h2 {
     color: var(--white_color);
+}
+
+.MainTraining .title strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    font-size: 300px;
+    font-weight: 900;
+    color: var(--bg_color);
+
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
 }
 
 .MainTraining .tab_menu {

@@ -17,12 +17,12 @@
 
 
 function smoothScroll() {
-    const lenis = new Lenis()
+    const lenis = new Lenis();
 
-    lenis.on('scroll', ScrollTrigger.update)
+    lenis.on('scroll', ScrollTrigger.update);
 
     gsap.ticker.add((time) => {
-        lenis.raf(time * 1000)
+        lenis.raf(time * 2000)
     })
 
     gsap.ticker.lagSmoothing(1)
@@ -37,7 +37,7 @@ function MainTitleTimeline() {
             pin: true,
             scrub: 1,
 
-            end: () => '+=' + document.querySelector('.MainTitle').offsetWidth * 3,
+            end: () => '+=' + document.querySelector('.MainTitle').offsetWidth * 2,
         }
     });
 
@@ -260,22 +260,35 @@ function Training() {
             trigger: '.MainTraining',
             pin: true,
             scrub: 1,
-            start: "-=200",
-            end: "+=400",
+            end: () => '+=' + document.querySelector('.MainTitle').offsetWidth * 2,
         }
     })
 
     TL2
-        .from('.MainTraining .title', {
+        .from('.MainTraining .title strong', {
+            autoAlpha: 0,
+            rotation: 360,
+            duration: 10,
+        })
+        .to('.MainTraining .title strong', {
+            scale: 3,
+            autoAlpha: 0,
+            delay: 5,
+            duration: 10,
+        })
+        .from('.MainTraining .title h2', {
             y: 200,
             autoAlpha: 0,
-            duration: 2,
+            delay: 5,
+            duration: 5,
         })
         .from('.MainTraining .inner', {
             y: 200,
             autoAlpha: 0,
-            duration: 2,
+            delay: 2,
+            duration: 5,
         })
+        .set({}, {}, "+=10")
 }
 
 
