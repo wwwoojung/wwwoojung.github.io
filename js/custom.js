@@ -287,7 +287,7 @@ function Training() {
     .set({}, {}, "+=10");
 }
 
-if (matchMedia("(max-width: 1023px)").matches) {
+if ($(window).width() < 1025) {
   $(".introduce_wrap svg").attr("width", "1024");
   $(".introduce_wrap .g04 path").attr("d", "M1114 412.5L700.4 700");
   $(".introduce_wrap .g03 text").attr("x", "1150");
